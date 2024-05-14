@@ -1,0 +1,21 @@
+section{
+    /* background-image: linear-gradient(to right, rgb(102, 7, 7), rgb(196, 17, 17)); */
+    background: linear-gradient(90deg, rgb(63, 3, 3) 40%, rgba(233,4,4,1) 100%);
+    min-height: 25vh;
+    color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.advanced-search {
+    border: none;
+    background: transparent;
+}
+
+.form-control:focus{
+    border: none;
+    box-shadow: none;
+}
+
+
+

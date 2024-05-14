@@ -1,0 +1,76 @@
+<!--! bug:  colors variables not work?? -->
+
+<section class="container my-3">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="inner bg-body-secondary rounded-3 m-2 p-3 shadow-sm">
+                <div class="text-black d-flex justify-content-between">
+                    <h6 class="fw-bold">All Job Status</h6>
+                    <select>
+                        <option selected>Monthly</option>
+                        <option>Daily</option>
+                    </select>
+                </div>
+                <div class="d-flex justify-content-evenly align-items-center mt-2">
+                    <div class="pie">
+                        <div class="inner-circle">
+                            <div class="title">6M</div>
+                        </div>
+                    </div>
+                    <div class="colors">
+                        <div>
+                            <div class="color-square total-gray"></div> 6M Total Jobs
+                        </div>
+                        <div>
+                            <div class="color-square inProgress-blue"></div> 4M In Progress
+                        </div>
+                        <div>
+                            <div class="color-square success-green"></div> 2M Success
+                        </div>
+                        <div>
+                            <div class="color-square fail-yellow"></div> 1M Fail
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="inner bg-body-secondary rounded-3 m-2 p-3 shadow-sm">
+                <h6 class="fw-bold mb-0">My Daily Job Status</h6>
+                <p class="text-secondary">Last Updated On 10-03-2023</p>
+                <div class="row">
+                    <div class="col d-flex flex-column">
+                        <div>
+                            <span class="job-status-icon p-1 rounded" style="background-color: #05050531;"><i class="fa-regular fa-copy" style="color: #050505;"></i></span>
+                            <span class="fw-semibold fs-5"> 3800</span></div>
+                        <p class="text-secondary">All Jobs</p>
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <div>
+                            <span class="job-status-icon p-1 rounded" style="background-color: #4e975b62;"><i class="fa-solid fa-file-circle-check" style="color: #4e975b;"></i></span>
+                            <span class="fw-semibold fs-5"> 2000</span></div>
+                        <p class="text-secondary">Success</p>
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <div>
+                            <span class="job-status-icon p-1 rounded" style="background-color: #2f82c156;" ><i class="fa-regular fa-hourglass" style="color: #2f82c1;"></i></span>
+                            <span class="fw-semibold fs-5"> 1200</span></div>
+                        <p class="text-secondary">In Progress</p>
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <div>
+                            <span class="job-status-icon p-1 rounded" style="background-color: #b13e3e54;"><i class="fa-solid fa-file-circle-xmark" style="color: #b13e3e;"></i></span>
+                            <span class="fw-semibold fs-5"> 1000</span></div>
+                        <p class="text-secondary">Failed</p>
+                    </div>
+                    <div class="col d-flex flex-column">
+                        <div>
+                            <span class="job-status-icon p-1 rounded" style="background-color: #e9c95360;"><i class="fa-solid fa-arrow-rotate-right" style="color: #e9c853;"></i></span>
+                            <span class="fw-semibold fs-5"> 300</span></div>
+                        <p class="text-secondary">Retry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --clr-red : #e00800;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+select{
+    border: none; 
+    background: transparent;
+}

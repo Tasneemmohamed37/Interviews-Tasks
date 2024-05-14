@@ -1,0 +1,14 @@
+.activity-header{
+    position: relative;
+    width: fit-content;
+}
+
+.activity-header::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(155, 155, 5);
+    height: 2px;
+    width: 25%;
+    left: 0;
+    bottom: -5px;
+}
