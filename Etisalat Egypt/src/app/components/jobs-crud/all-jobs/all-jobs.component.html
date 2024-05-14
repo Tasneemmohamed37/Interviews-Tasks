@@ -1,0 +1,33 @@
+<section class="container my-2">
+    <div class="d-flex justify-content-end m-3">
+        <button class="btn btn-secondary rounded-pill" [routerLink]="['/jobs/add']">New Job</button>
+    </div>
+    
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Total Jobs</th>
+                <th scope="col">Date</th>
+                <th scope="col">Type</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let job of jobs; let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td>{{job.title}}</td>
+                <td>{{job.salary}}</td>
+                <td>{{job.totalJobs}}</td>
+                <td>{{job.Date}}</td>
+                <td>{{job.Type}}</td>
+                <td>
+                    <i class="fa-solid fa-pen-to-square" style="color: #FFD43B; font-size: 20px;" [routerLink]="['/jobs/edit',job.id]"></i> | 
+                    <i class="fa-solid fa-trash-can" style="color: #c21805; font-size: 20px;" (click)="delete(job.id)"></i>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>

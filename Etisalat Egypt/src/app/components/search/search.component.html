@@ -4,13 +4,13 @@
         <h3>Hi ,Tasneem Elhussiny</h3>
         <div class="input-group my-3">
             <span class="input-group-text">
-                <select [(ngModel)]="searchOption">
+                <select [(ngModel)]="searchOption" (change)="updatePlaceholder()">
                     <option value="id" selected>Job ID</option>
                     <option value="deptID">Department ID</option>
                     <option value="countryID">Country ID</option> 
                 </select>
             </span>
-            <input type="text" class="form-control" placeholder="Search By Job ID" [(ngModel)]="searchValue">
+            <input type="text" class="form-control" [placeholder]="placeholderText" [(ngModel)]="searchValue">
             <span class="input-group-text" (click)="search()">
                 <i class="fa-solid fa-magnifying-glass" style="color: #0a0a0a;"></i>
             </span>

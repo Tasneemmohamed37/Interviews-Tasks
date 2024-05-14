@@ -1,0 +1,63 @@
+<section class="container my-3">
+    <h1>{{jobId ? 'Edit Product':'Add Product'}}</h1>
+    <form class="row g-3 m-3" [formGroup]="jobForm" (submit)="GetData($event)">
+        <div class="col-12">
+            <label for="title" class="form-label">Job Title</label>
+            <input type="text" class="form-control" id="title" name="title" formControlName="title"
+            [class.is-invalid]="!jobForm.controls['title'].valid" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                {{jobForm.controls['title'].errors| json}}
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="salary" class="form-label">Salary</label>
+            <input type="number" class="form-control" id="salary" name="salary" formControlName="salary" 
+            [class.is-invalid]="!jobForm.controls['salary'].valid" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                {{jobForm.controls['salary'].errors| json}}
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="totalJobs" class="form-label">Total Jobs</label>
+            <input type="number" class="form-control" id="totalJobs" name="totalJobs" formControlName="totalJobs" 
+            [class.is-invalid]="!jobForm.controls['totalJobs'].valid" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                {{jobForm.controls['totalJobs'].errors| json}}
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="Date" class="form-label">Date</label>
+            <input type="text" class="form-control" id="Date" name="Date" formControlName="Date"
+            [class.is-invalid]="!jobForm.controls['Date'].valid" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                {{jobForm.controls['Date'].errors| json}}
+            </div>
+        </div>
+        <div class="col-12">
+            <label for="Type" class="form-label">Type</label>
+            <input type="text" class="form-control" id="Type" name="Type" formControlName="Type"
+            [class.is-invalid]="!jobForm.controls['Type'].valid" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                {{jobForm.controls['Type'].errors| json}}
+            </div>
+        </div>
+        <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </form>
+</section>

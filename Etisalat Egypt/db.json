@@ -4,166 +4,173 @@
       "id": 1234,
       "title": "Junior full stack .NET",
       "salary": 10000,
-      "totalJobs":1233,
+      "totalJobs": 1233,
       "Date": "28-12-2022 10:45:37",
       "Type": "Action Type",
-      "deptID":1,
-      "countryID":1
+      "deptID": 1,
+      "countryID": 1
     },
     {
       "id": 2345,
       "title": "Software Engineer",
       "salary": 12000,
-      "totalJobs":2344,
+      "totalJobs": 2344,
       "Date": "28-4-2024 10:45:37",
       "Type": "New Activation",
-      "deptID":11,
-      "countryID":11
+      "deptID": 11,
+      "countryID": 11
     },
     {
       "id": 3456,
       "title": "Team Lead",
       "salary": 70000,
-      "totalJobs":3455,
+      "totalJobs": 3455,
       "Date": "8-12-2023 10:45:37",
       "Type": "New Activation",
-      "deptID":111,
-      "countryID":1111
+      "deptID": 111,
+      "countryID": 1111
     },
     {
       "id": 4567,
       "title": "Junior QC",
       "salary": 15000,
-      "totalJobs":5677,
+      "totalJobs": 5677,
       "Date": "2-5-2024 10:45:37",
       "Type": "Action Type",
-      "deptID":1112,
-      "countryID":1112
+      "deptID": 1112,
+      "countryID": 1112
     },
     {
       "id": 5678,
       "title": "HR",
       "salary": 15000,
-      "totalJobs":6788,
+      "totalJobs": 6788,
       "Date": "2-5-2024 10:45:37",
       "Type": "Action Type",
-      "deptID":12,
-      "countryID":12
+      "deptID": 12,
+      "countryID": 12
+    },
+    {
+      "id": 1970,
+      "title": "lol",
+      "salary": 123,
+      "totalJobs": 11,
+      "Date": "2024-05-14T22:58:59.410Z",
+      "Type": "aa"
     }
   ],
-
-  "applications":[
+  "applications": [
     {
-      "id":1,
-      "jobID":1234,
-      "applicantID":123,
+      "id": "1",
+      "jobID": 1234,
+      "applicantID": 123,
       "applyingDate": "1-1-2023",
-      "status":"In Progress"
+      "status": "In Progress"
     },
     {
-      "id":2,
-      "jobID":1234,
-      "applicantID":124,
+      "id": "2",
+      "jobID": 1234,
+      "applicantID": 124,
       "applyingDate": "1-1-2023",
-      "status":"In Progress"
+      "status": "In Progress"
     },
     {
-      "id":3,
-      "jobID":1234,
-      "applicantID":125,
+      "id": "3",
+      "jobID": 1234,
+      "applicantID": 125,
       "applyingDate": "1-1-2023",
-      "status":"In Progress"
+      "status": "In Progress"
     },
     {
-      "id":4,
-      "jobID":1234,
-      "applicantID":126,
+      "id": "4",
+      "jobID": 1234,
+      "applicantID": 126,
       "applyingDate": "1-1-2023",
-      "status":"Success"
+      "status": "Success"
     },
     {
-      "id":5,
-      "jobID":2345,
-      "applicantID":234,
+      "id": "5",
+      "jobID": 2345,
+      "applicantID": 234,
       "applyingDate": "1-5-2024",
-      "status":"In Progress"
+      "status": "In Progress"
     },
     {
-      "id":6,
-      "jobID":2345,
-      "applicantID":235,
+      "id": "6",
+      "jobID": 2345,
+      "applicantID": 235,
       "applyingDate": "1-5-2024",
-      "status":"Failed"
+      "status": "Failed"
     },
     {
-      "id":7,
-      "jobID":2345,
-      "applicantID":236,
+      "id": "7",
+      "jobID": 2345,
+      "applicantID": 236,
       "applyingDate": "1-5-2024",
-      "status":"In Progress"
+      "status": "In Progress"
     },
     {
-      "id":8,
-      "jobID":2345,
-      "applicantID":237,
+      "id": "8",
+      "jobID": 2345,
+      "applicantID": 237,
       "applyingDate": "1-5-2024",
-      "status":"Success"
+      "status": "Success"
     },
     {
-      "id":9,
-      "jobID":3456,
-      "applicantID":456,
+      "id": "9",
+      "jobID": 3456,
+      "applicantID": 456,
       "applyingDate": "1-5-2024",
-      "status":"In Progress"
+      "status": "In Progress"
     },
     {
-      "id":10,
-      "jobID":3456,
-      "applicantID":457,
+      "id": "10",
+      "jobID": 3456,
+      "applicantID": 457,
       "applyingDate": "1-5-2024",
-      "status":"Failed"
+      "status": "Failed"
     },
     {
-      "id":11,
-      "jobID":458,
-      "applicantID":236,
+      "id": "11",
+      "jobID": 458,
+      "applicantID": 236,
       "applyingDate": "1-5-2024",
-      "status":"In Progress"
+      "status": "In Progress"
     },
     {
-      "id":12,
-      "jobID":459,
-      "applicantID":237,
+      "id": "12",
+      "jobID": 459,
+      "applicantID": 237,
       "applyingDate": "1-5-2024",
-      "status":"Success"
+      "status": "Success"
     },
     {
-      "id":13,
-      "jobID":4567,
-      "applicantID":456,
+      "id": "13",
+      "jobID": 4567,
+      "applicantID": 456,
       "applyingDate": "1-5-2024",
-      "status":"In Progress"
+      "status": "In Progress"
     },
     {
-      "id":14,
-      "jobID":4567,
-      "applicantID":457,
+      "id": "14",
+      "jobID": 4567,
+      "applicantID": 457,
       "applyingDate": "1-5-2024",
-      "status":"Failed"
+      "status": "Failed"
     },
     {
-      "id":15,
-      "jobID":4567,
-      "applicantID":458,
+      "id": "15",
+      "jobID": 4567,
+      "applicantID": 458,
       "applyingDate": "1-5-2024",
-      "status":"In Progress"
+      "status": "In Progress"
     },
     {
-      "id":16,
-      "jobID":4567,
-      "applicantID":459,
+      "id": "16",
+      "jobID": 4567,
+      "applicantID": 459,
       "applyingDate": "1-5-2024",
-      "status":"Success"
+      "status": "Success"
     }
   ]
 }

@@ -11,6 +11,7 @@ import { log } from 'console';
 export class SearchComponent {
 
   searchOption: string = 'id'; // Default value is 'Job ID'
+  placeholderText: string = "Search By Job ID";
   searchValue: number|any;
   idOfJobWantToGetStatus:number = 0;
   @Output() myEvent: EventEmitter<number> = new EventEmitter<number>();
@@ -31,5 +32,22 @@ export class SearchComponent {
         error:(error)=>{console.log('error'+error)},
         complete: ()=>{},
       });
+  }
+
+  updatePlaceholder() {
+    switch (this.searchOption) {
+      case "id":
+        this.placeholderText = "Search By Job ID";
+        break;
+      case "deptID":
+        this.placeholderText = "Search By Department ID";
+        break;
+      case "countryID":
+        this.placeholderText = "Search By Country ID";
+        break;
+      default:
+        this.placeholderText = "Search";
+        break;
+    }
   }
 }

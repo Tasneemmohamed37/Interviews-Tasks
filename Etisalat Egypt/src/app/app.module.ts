@@ -13,7 +13,9 @@ import { MainLayoutComponent } from './components/main-layout/main-layout.compon
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { NumberFormatPipe } from './pipes/number-format.pipe';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AllJobsComponent } from './components/jobs-crud/all-jobs/all-jobs.component';
+import { JobReactiveFormComponent } from './components/jobs-crud/job-reactive-form/job-reactive-form.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     NotFoundComponent,
     MainLayoutComponent,
-    NumberFormatPipe
+    NumberFormatPipe,
+    AllJobsComponent,
+    JobReactiveFormComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +38,8 @@ import { FormsModule } from '@angular/forms';
     RouterLinkActive,
     RouterOutlet,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     provideClientHydration()

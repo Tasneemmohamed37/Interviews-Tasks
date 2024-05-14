@@ -67,4 +67,16 @@ export class JobsService {
     return jobStatus;
   }
 
+  add(job:IJob) {
+    return this.httpClient.post(`${this.baseUrl}/jobs`,job);
+  }
+
+  edit(id:number , job:IJob):Observable<IJob> {
+    return this.httpClient.put<IJob>(`${this.baseUrl}/jobs/${id}`,job);
+  }
+
+  delete(id:number):Observable<void>{
+    return this.httpClient.delete<void>(`${this.baseUrl}/jobs/${id}`);
+  }
+
 }

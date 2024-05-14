@@ -1,12 +1,7 @@
--- notes -> all filtration need api endpoints!!
 
--- TODO -> 1. check responsive & handle bugs
+-- TODO -> 1. user name static in 'search component' => get from local storage
 		-> 2. loading screen
-		-> 3. component 'my activities' will include button add job to handle 'INSERT'
-	    -> 4. component 'recent activities' button 'view all' will navigate to 'activities table' to handle 'UPDATE | DELETE'
+	    
 		
-		
--- bugs -> 1. colors variables not work in 'job status component'
-		-> 2. nav bar responsive design & in case there is no user img???
-		-> 3. user name static in 'search component' => get from local storage
+-- bugs -> 1. colors variables not work in 'job status component' 
 		-> 4. when filter jobs by department or country only get first match
