@@ -1,32 +1,30 @@
-<nav class="py-1 shadow-sm">
-    <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-            <section class="d-flex justify-content-between align-items-center">
-                <div class="logo me-3">
-                    <a class="py-3" routerLink="/home"  routerLinkActive="active">
-                        <img
-                            src="https://www.ibs.com.eg/wp-content/uploads/2023/07/Etisalat-Egypt.png"
-                            alt="Etisalat logo"
-                            style="width: 150px;">
-                    </a>
-                </div>
-                <div class="links pt-3">
-                    <ul class="list-unstyled d-flex align-items-center gap-3">
-                        <li>
-                            <a class="fw-semibold py-3" routerLink="/home" routerLinkActive="active" >Home</a>
-                        </li>
-                        <li>
-                            <a class="fw-semibold py-3" routerLink="/myActivities" routerLinkActive="active" >My Activities</a>
-                        </li>
-                        <li>
-                            <a class="fw-semibold py-3" routerLink="/spocs" routerLinkActive="active" >SPOCs</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="d-flex justify-content-evenly align-items-center">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/home" routerLinkActive="active">
+            <img src="https://www.ibs.com.eg/wp-content/uploads/2023/07/Etisalat-Egypt.png"
+                alt="Etisalat logo" style="width: 150px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/myActivities" routerLinkActive="active">My
+                        Activities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/spocs" routerLinkActive="active">SPOCs</a>
+                </li>
+            </ul>
+            <section class="d-flex">
                 <button class="btn rounded-pill" style="text-wrap: nowrap;">Download Samples</button>
-                <button class="btn rounded-pill mx-3 text-white createBtn" style="text-wrap: nowrap;"><i class="fa-solid fa-plus" style="color: #ffffff;"></i> Create Batch</button>
+                <button class="btn rounded-pill mx-3 text-white createBtn" style="text-wrap: nowrap;"><i
+                        class="fa-solid fa-plus" style="color: #ffffff;"></i> Create Batch</button>
                 <div class="img position-relative">
                     <img src="https://picsum.photos/35/35" alt="user img" style="border-radius: 50%;">
                 </div>

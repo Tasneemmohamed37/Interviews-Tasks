@@ -1,5 +1,4 @@
 <!--! bug:  colors variables not work?? -->
-
 <section class="container my-3">
     <div class="row">
         <div class="col-md-4">
@@ -14,21 +13,22 @@
                 <div class="d-flex justify-content-evenly align-items-center mt-2">
                     <div class="pie">
                         <div class="inner-circle">
-                            <div class="title">6M</div>
+                            <div class="title">{{jobsStatus.totalJobs | numberFormat}}</div>
                         </div>
                     </div>
                     <div class="colors">
                         <div>
-                            <div class="color-square total-gray"></div> 6M Total Jobs
+                            <div class="color-square total-gray"></div>
+                            {{jobsStatus.totalJobs | numberFormat}} Total Jobs
                         </div>
                         <div>
-                            <div class="color-square inProgress-blue"></div> 4M In Progress
+                            <div class="color-square inProgress-blue"></div> {{jobsStatus.inProgress | numberFormat}} In Progress
                         </div>
                         <div>
-                            <div class="color-square success-green"></div> 2M Success
+                            <div class="color-square success-green"></div> {{jobsStatus.success | numberFormat}} Success
                         </div>
                         <div>
-                            <div class="color-square fail-yellow"></div> 1M Fail
+                            <div class="color-square fail-yellow"></div> {{jobsStatus.failed | numberFormat}} Fail
                         </div>
                     </div>
                 </div>
@@ -42,31 +42,31 @@
                     <div class="col d-flex flex-column">
                         <div>
                             <span class="job-status-icon p-1 rounded" style="background-color: #05050531;"><i class="fa-regular fa-copy" style="color: #050505;"></i></span>
-                            <span class="fw-semibold fs-5"> 3800</span></div>
+                            <span class="fw-semibold fs-5"> {{jobsStatus.totalJobs}}</span></div>
                         <p class="text-secondary">All Jobs</p>
                     </div>
                     <div class="col d-flex flex-column">
                         <div>
                             <span class="job-status-icon p-1 rounded" style="background-color: #4e975b62;"><i class="fa-solid fa-file-circle-check" style="color: #4e975b;"></i></span>
-                            <span class="fw-semibold fs-5"> 2000</span></div>
+                            <span class="fw-semibold fs-5"> {{jobsStatus.success}}</span></div>
                         <p class="text-secondary">Success</p>
                     </div>
                     <div class="col d-flex flex-column">
                         <div>
                             <span class="job-status-icon p-1 rounded" style="background-color: #2f82c156;" ><i class="fa-regular fa-hourglass" style="color: #2f82c1;"></i></span>
-                            <span class="fw-semibold fs-5"> 1200</span></div>
+                            <span class="fw-semibold fs-5"> {{jobsStatus.inProgress}}</span></div>
                         <p class="text-secondary">In Progress</p>
                     </div>
                     <div class="col d-flex flex-column">
                         <div>
                             <span class="job-status-icon p-1 rounded" style="background-color: #b13e3e54;"><i class="fa-solid fa-file-circle-xmark" style="color: #b13e3e;"></i></span>
-                            <span class="fw-semibold fs-5"> 1000</span></div>
+                            <span class="fw-semibold fs-5"> {{jobsStatus.failed}}</span></div>
                         <p class="text-secondary">Failed</p>
                     </div>
                     <div class="col d-flex flex-column">
                         <div>
                             <span class="job-status-icon p-1 rounded" style="background-color: #e9c95360;"><i class="fa-solid fa-arrow-rotate-right" style="color: #e9c853;"></i></span>
-                            <span class="fw-semibold fs-5"> 300</span></div>
+                            <span class="fw-semibold fs-5"> {{jobsStatus.retry}}</span></div>
                         <p class="text-secondary">Retry</p>
                     </div>
                 </div>

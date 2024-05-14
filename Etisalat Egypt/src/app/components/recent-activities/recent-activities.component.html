@@ -9,46 +9,13 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-3">
+        <div *ngFor="let job of recentJobActivities;" class="col-md-3">
             <div class="inner rounded-3 m-2 py-2 px-3 shadow-lg d-flex justify-content-between align-items-center">
                 <div class="details">
-                    <h6>1234</h6>
-                    <p><i class="fa-regular fa-paste" style="color: #0d0d0d;"></i> 100 total jobs</p>
-                    <p>Action type</p>
-                    <p class="text-secondary">10-5-2023 10:45:37</p>
-                </div>
-                <i class="fa-solid fa-chevron-right" style="color: var(--clr-red);"></i>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="inner rounded-3 m-2 py-2 px-3 shadow-lg d-flex justify-content-between align-items-center">
-                <div class="details">
-                    <h6>1234</h6>
-                    <p><i class="fa-regular fa-paste" style="color: #0d0d0d;"></i> 100 total jobs</p>
-                    <p>Action type</p>
-                    <p class="text-secondary">10-5-2023 10:45:37</p>
-                </div>
-                <i class="fa-solid fa-chevron-right" style="color: var(--clr-red);"></i>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="inner rounded-3 m-2 py-2 px-3 shadow-lg d-flex justify-content-between align-items-center">
-                <div class="details">
-                    <h6>1234</h6>
-                    <p><i class="fa-regular fa-paste" style="color: #0d0d0d;"></i> 100 total jobs</p>
-                    <p>Action type</p>
-                    <p class="text-secondary">10-5-2023 10:45:37</p>
-                </div>
-                <i class="fa-solid fa-chevron-right" style="color: var(--clr-red);"></i>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="inner rounded-3 m-2 py-2 px-3 shadow-lg d-flex justify-content-between align-items-center">
-                <div class="details">
-                    <h6>1234</h6>
-                    <p><i class="fa-regular fa-paste" style="color: #0d0d0d;"></i> 100 total jobs</p>
-                    <p>Action type</p>
-                    <p class="text-secondary">10-5-2023 10:45:37</p>
+                    <h6>{{job.id}}</h6>
+                    <p><i class="fa-regular fa-paste" style="color: #0d0d0d;"></i> {{job.totalJobs}} total jobs</p>
+                    <p>{{job.Type}}</p>
+                    <p class="text-secondary">{{job.Date}}</p>
                 </div>
                 <i class="fa-solid fa-chevron-right" style="color: var(--clr-red);"></i>
             </div>

@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  searchComponentJobId:number=0;
 
+  getJobIdFromSearchComponent(id:number){
+    this.searchComponentJobId=id;
+  }
 }

@@ -4,29 +4,51 @@
       "id": 1234,
       "title": "Junior full stack .NET",
       "salary": 10000,
-      "Date": "28-12-2022",
-      "Type": "Action Type"
+      "totalJobs":1233,
+      "Date": "28-12-2022 10:45:37",
+      "Type": "Action Type",
+      "deptID":1,
+      "countryID":1
     },
     {
       "id": 2345,
       "title": "Software Engineer",
       "salary": 12000,
-      "Date": "28-4-2024",
-      "Type": "New Activation"
+      "totalJobs":2344,
+      "Date": "28-4-2024 10:45:37",
+      "Type": "New Activation",
+      "deptID":11,
+      "countryID":11
     },
     {
       "id": 3456,
       "title": "Team Lead",
       "salary": 70000,
-      "Date": "8-12-2023",
-      "Type": "New Activation"
+      "totalJobs":3455,
+      "Date": "8-12-2023 10:45:37",
+      "Type": "New Activation",
+      "deptID":111,
+      "countryID":1111
     },
     {
       "id": 4567,
       "title": "Junior QC",
       "salary": 15000,
-      "Date": "2-5-2024",
-      "Type": "Action Type"
+      "totalJobs":5677,
+      "Date": "2-5-2024 10:45:37",
+      "Type": "Action Type",
+      "deptID":1112,
+      "countryID":1112
+    },
+    {
+      "id": 5678,
+      "title": "HR",
+      "salary": 15000,
+      "totalJobs":6788,
+      "Date": "2-5-2024 10:45:37",
+      "Type": "Action Type",
+      "deptID":12,
+      "countryID":12
     }
   ],
 

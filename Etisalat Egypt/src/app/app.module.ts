@@ -11,6 +11,9 @@ import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { MainLayoutComponent } from './components/main-layout/main-layout.component';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { NumberFormatPipe } from './pipes/number-format.pipe';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,14 +24,17 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
     RecentActivitiesComponent,
     HomeComponent,
     NotFoundComponent,
-    MainLayoutComponent
+    MainLayoutComponent,
+    NumberFormatPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterLink,
     RouterLinkActive,
-    RouterOutlet
+    RouterOutlet,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration()

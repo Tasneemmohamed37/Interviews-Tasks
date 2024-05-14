@@ -1,4 +1,4 @@
 <!-- todo: loading screen -->
-<app-search></app-search>
-<app-job-status></app-job-status>
+<app-search (myEvent)="getJobIdFromSearchComponent($event)"></app-search>
+<app-job-status [jobIdToSearch]="searchComponentJobId"></app-job-status>
 <app-recent-activities></app-recent-activities>

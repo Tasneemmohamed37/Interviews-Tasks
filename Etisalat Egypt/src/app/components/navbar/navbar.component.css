@@ -1,5 +1,5 @@
 .active{
-    color: var(--clr-red);
+    color: var(--clr-red) !important; 
 }
 
 button{
