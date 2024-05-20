@@ -23,7 +23,6 @@ export class JobStatusComponent implements OnInit {
 
   ngOnChanges() {
     // This method will be called whenever the input data changes
-    console.log('hello from job status component',this.jobIdToSearch);
     this.applicationsService.getApplicationsByJobID(this.jobIdToSearch).subscribe({
       next:(data) =>{
         this.jobsStatus= this.jobService.calcJobsStatusByAppsArray(data);
@@ -44,5 +43,8 @@ export class JobStatusComponent implements OnInit {
     console.log(this.jobsStatus);
   }
 
-
+  getChartUrl(): string {
+    const { inProgress, success, failed } = this.jobsStatus;
+    return `https://quickchart.io/chart/render/zm-1b6f36e6-37c5-4281-8131-fcc6574e5021?data1=${inProgress},${success},${failed}`;
+  }
 }

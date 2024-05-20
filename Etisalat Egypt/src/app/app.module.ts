@@ -11,7 +11,7 @@ import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { MainLayoutComponent } from './components/main-layout/main-layout.component';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, provideHttpClient, withFetch } from '@angular/common/http';
 import { NumberFormatPipe } from './pipes/number-format.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AllJobsComponent } from './components/jobs-crud/all-jobs/all-jobs.component';
@@ -42,7 +42,7 @@ import { JobReactiveFormComponent } from './components/jobs-crud/job-reactive-fo
     ReactiveFormsModule
   ],
   providers: [
-    provideClientHydration()
+    provideHttpClient(withFetch())
   ],
   bootstrap: [AppComponent]
 })

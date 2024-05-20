@@ -11,10 +11,8 @@
                     </select>
                 </div>
                 <div class="d-flex justify-content-evenly align-items-center mt-2">
-                    <div class="pie">
-                        <div class="inner-circle">
-                            <div class="title">{{jobsStatus.totalJobs | numberFormat}}</div>
-                        </div>
+                    <div>
+                        <img [src]="getChartUrl()">
                     </div>
                     <div class="colors">
                         <div>

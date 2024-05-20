@@ -1,50 +1,6 @@
 .inner{
-    min-height: 30vh;
+    min-height: 36vh;
 }
-
-/* ---------------- [start pie chart] -------------------- */
-
-/* :root{
-    --gray-clr: #e9ecef;
-    --blue-clr: #1f5b83;
-    --green-clr: #23a057;
-    --yellow-clr: #e2b605;
-} */
-
-.pie {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: conic-gradient(
-        #e9ecef 0% 1%,        /* Gap (Gray) */
-        #1f5b83 1% 25%,      /* Blue */
-            #1f5b83 27% 52%,     /* Blue */
-            #e9ecef 52% 53%,        /* Gap (Gray) */
-            #23a057 53% 79%,     /* Green */
-            #e9ecef 79% 80%,        /* Gap (Gray) */
-            #e2b605 80% 100%,    /* Yellow */
-            #e9ecef 100% 100%       /* Gap (Gray) */
-    );
-}
-.inner-circle {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    width: 80%;
-    height: 80%;
-    border-radius: 50%;
-    background-color: #e9ecef;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.title {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-/* ---------------- [end pie chart] -------------------- */
 
 /* ----------------- [start chart side titles] -------------- */
 .color-square{

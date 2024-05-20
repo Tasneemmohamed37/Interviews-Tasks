@@ -1,4 +1,3 @@
-
 -- TODO -> 1. user name static in 'search component' => get from local storage
 		-> 2. loading screen
 	    

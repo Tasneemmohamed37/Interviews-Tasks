@@ -1,7 +1,7 @@
 {
   "jobs": [
     {
-      "id": 1234,
+      "id": "1234",
       "title": "Junior full stack .NET",
       "salary": 10000,
       "totalJobs": 1233,
@@ -11,7 +11,7 @@
       "countryID": 1
     },
     {
-      "id": 2345,
+      "id": "2345",
       "title": "Software Engineer",
       "salary": 12000,
       "totalJobs": 2344,
@@ -21,17 +21,15 @@
       "countryID": 11
     },
     {
-      "id": 3456,
-      "title": "Team Lead",
+      "id": "3456",
+      "title": "Team Lead2",
       "salary": 70000,
       "totalJobs": 3455,
       "Date": "8-12-2023 10:45:37",
-      "Type": "New Activation",
-      "deptID": 111,
-      "countryID": 1111
+      "Type": "New Activation"
     },
     {
-      "id": 4567,
+      "id": "4567",
       "title": "Junior QC",
       "salary": 15000,
       "totalJobs": 5677,
@@ -41,7 +39,7 @@
       "countryID": 1112
     },
     {
-      "id": 5678,
+      "id": "5678",
       "title": "HR",
       "salary": 15000,
       "totalJobs": 6788,
@@ -49,14 +47,6 @@
       "Type": "Action Type",
       "deptID": 12,
       "countryID": 12
-    },
-    {
-      "id": 1970,
-      "title": "lol",
-      "salary": 123,
-      "totalJobs": 11,
-      "Date": "2024-05-14T22:58:59.410Z",
-      "Type": "aa"
     }
   ],
   "applications": [
